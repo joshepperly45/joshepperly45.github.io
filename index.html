@@ -1,0 +1,102 @@
+---
+layout: default
+title: Home
+---
+
+<div class="hero-section">
+  <div class="hero-content">
+    <h1>Welcome to Lumière Candles</h1>
+    <p>Handcrafted luxury candles to brighten your space and elevate your senses. Each candle is made with care, using premium soy wax and unique fragrances for a clean, long-lasting burn.</p>
+    <p>Discover our collection and find the perfect scent for every mood and occasion.</p>
+  </div>
+</div>
+
+<div class="gallery-section">
+  <h2>Our Candle Collection</h2>
+  <div class="gallery-placeholder">
+    <!-- Upload your candle images here -->
+    <div class="image-placeholder">Image 1</div>
+    <div class="image-placeholder">Image 2</div>
+    <div class="image-placeholder">Image 3</div>
+    <div class="image-placeholder">Image 4</div>
+  </div>
+</div>
+
+<div class="about-section">
+  <h2>About Lumière Candles</h2>
+  <p>Founded by passionate artisans, Lumière Candles is dedicated to creating beautiful, eco-friendly candles that transform any room into a sanctuary. Our mission is to bring warmth, light, and a touch of elegance to your home.</p>
+</div>
+
+<style>
+.hero-section {
+  background: linear-gradient(120deg, #f8fafc 0%, #f1e3e4 100%);
+  padding: 60px 0 40px 0;
+  text-align: center;
+}
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2d2d2d;
+  margin-bottom: 20px;
+}
+.hero-content p {
+  font-size: 1.25rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+.gallery-section {
+  padding: 40px 0;
+  background: #fff;
+  text-align: center;
+}
+.gallery-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #2d2d2d;
+}
+.gallery-placeholder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+.image-placeholder {
+  width: 220px;
+  height: 220px;
+  background: #f1e3e4;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #b08e99;
+  font-size: 1.1rem;
+  font-style: italic;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+.about-section {
+  padding: 40px 0 60px 0;
+  background: #f8fafc;
+  text-align: center;
+}
+.about-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2d2d2d;
+}
+.about-section p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+}
+@media (max-width: 700px) {
+  .gallery-placeholder {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .image-placeholder {
+    width: 100%;
+    height: 180px;
+  }
+}
+</style>
