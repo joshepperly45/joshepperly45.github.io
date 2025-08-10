@@ -5,54 +5,96 @@ title: Home
 
 <div class="hero-section">
   <div class="hero-content">
-    <h1>Welcome to Lumière Candles</h1>
-    <p>Handcrafted luxury candles to brighten your space and elevate your senses. Each candle is made with care, using premium soy wax and unique fragrances for a clean, long-lasting burn.</p>
+    <h1>Welcome to 3 Musketeers Candles</h1>
+    <p>Handcrafted candles made locally in Maine to brighten your space and elevate your senses. Each candle is made with care, using quality ingredients and unique, relaxing scents for a clean, long-lasting burn.</p>
     <p>Discover our collection and find the perfect scent for every mood and occasion.</p>
   </div>
 </div>
 
 <div class="gallery-section">
+  <div class="gallery-tagline">Ignite Your Passions</div>
   <h2>Our Candle Collection</h2>
   <div class="gallery-placeholder">
     <!-- Upload your candle images here -->
-    <div class="image-placeholder">Image 1</div>
-    <div class="image-placeholder">Image 2</div>
-    <div class="image-placeholder">Image 3</div>
-    <div class="image-placeholder">Image 4</div>
+    <div class="candle-card">
+      <img src="/assets/images/candle1.jpeg" alt="Lavender Fields Candle" class="candle-img" />
+      <div class="candle-info">
+        <div class="candle-name">Lavender Fields</div>
+        <div class="candle-desc">A calming blend of fresh lavender and subtle vanilla, perfect for relaxation.</div>
+        <div class="candle-price">$14.99</div>
+      </div>
+    </div>
+    <div class="candle-card">
+      <img src="/assets/images/candle2.jpg" alt="Maine Woods Candle" class="candle-img" />
+      <div class="candle-info">
+        <div class="candle-name">Maine Woods</div>
+        <div class="candle-desc">Bring the outdoors in with notes of pine, cedar, and a hint of balsam fir.</div>
+        <div class="candle-price">$16.50</div>
+      </div>
+    </div>
+    <div class="candle-card">
+      <img src="/assets/images/candle3.jpg" alt="Coastal Breeze Candle" class="candle-img" />
+      <div class="candle-info">
+        <div class="candle-name">Coastal Breeze</div>
+        <div class="candle-desc">A fresh, airy scent with hints of sea salt and driftwood for a beachy vibe.</div>
+        <div class="candle-price">$13.75</div>
+      </div>
+    </div>
+    <div class="candle-card">
+      <img src="/assets/images/candle4.jpg" alt="Sweet Maple Candle" class="candle-img" />
+      <div class="candle-info">
+        <div class="candle-name">Sweet Maple</div>
+        <div class="candle-desc">Warm maple syrup and brown sugar create a cozy, inviting aroma.</div>
+        <div class="candle-price">$15.25</div>
+      </div>
+    </div>
   </div>
 </div>
 
 <div class="about-section">
-  <h2>About Lumière Candles</h2>
-  <p>Founded by passionate artisans, Lumière Candles is dedicated to creating beautiful, eco-friendly candles that transform any room into a sanctuary. Our mission is to bring warmth, light, and a touch of elegance to your home.</p>
+  <h2>About 3 Musketeers Candles</h2>
+  <p>Founded by Andrea Archambault, 3 Musketeers Candles is dedicated to creating beautiful, hand-crafted candles right here in Maine. Our mission is to help you relax and enjoy unique, artisan scents that bring warmth and comfort to your home.</p>
+  <div class="about-logo-wrapper">
+    <img src="/assets/images/logo.png" alt="3 Musketeers Candles Logo" class="about-logo-img large" />
+  </div>
 </div>
 
+</style>
 <style>
+/* Color Palette */
+:root {
+  --soft-purple: #bbaeea;
+  --eggshell-white: #f8f6f2;
+  --soft-blue: #a7c7e7;
+  --accent-pink: #e7b7d6;
+  --text-main: #3a3552;
+  --text-light: #6d6a7c;
+}
 .hero-section {
-  background: linear-gradient(120deg, #f8fafc 0%, #f1e3e4 100%);
+  background: linear-gradient(120deg, var(--eggshell-white) 0%, var(--soft-blue) 100%);
   padding: 60px 0 40px 0;
   text-align: center;
 }
 .hero-content h1 {
   font-size: 3rem;
   font-weight: 700;
-  color: #2d2d2d;
+  color: var(--text-main);
   margin-bottom: 20px;
 }
 .hero-content p {
   font-size: 1.25rem;
-  color: #555;
+  color: var(--text-light);
   margin-bottom: 10px;
 }
 .gallery-section {
   padding: 40px 0;
-  background: #fff;
+  background: var(--eggshell-white);
   text-align: center;
 }
 .gallery-section h2 {
   font-size: 2rem;
   margin-bottom: 30px;
-  color: #2d2d2d;
+  color: var(--text-main);
 }
 .gallery-placeholder {
   display: flex;
@@ -63,33 +105,61 @@ title: Home
 .image-placeholder {
   width: 220px;
   height: 220px;
-  background: #f1e3e4;
+  background: var(--soft-purple);
   border-radius: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #b08e99;
+  color: var(--accent-pink);
   font-size: 1.1rem;
   font-style: italic;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  box-shadow: 0 2px 12px rgba(187, 174, 234, 0.07);
 }
 .about-section {
   padding: 40px 0 60px 0;
-  background: #f8fafc;
+  background: var(--soft-blue);
   text-align: center;
 }
 .about-section h2 {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #2d2d2d;
+  color: var(--text-main);
 }
 .about-section p {
   font-size: 1.1rem;
-  color: #555;
+  color: var(--text-light);
   max-width: 700px;
   margin: 0 auto;
 }
+/* About Logo Styles */
+.about-logo-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+.about-logo-img {
+  height: 64px;
+  width: auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(187, 174, 234, 0.08);
+  transition: height 0.2s;
+}
+.about-logo-img.large {
+  height: 120px;
+}
+/* Gallery Tagline */
+.gallery-tagline {
+  font-family: 'Brush Script MT', cursive, 'Dancing Script', 'Pacifico', sans-serif;
+  font-size: 2rem;
+  color: var(--accent-pink);
+  margin-bottom: 10px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
 @media (max-width: 700px) {
+  .gallery-tagline {
+    font-size: 1.3rem;
+  }
   .gallery-placeholder {
     flex-direction: column;
     gap: 16px;
@@ -97,6 +167,54 @@ title: Home
   .image-placeholder {
     width: 100%;
     height: 180px;
+  }
+  .about-logo-img.large {
+    height: 80px;
+  }
+}
+.candle-img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+  box-shadow: 0 2px 12px rgba(187, 174, 234, 0.07);
+  margin-bottom: 0;
+}
+/* Candle Card Styles */
+.candle-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(187, 174, 234, 0.07);
+  padding: 0 0 18px 0;
+  width: 220px;
+}
+.candle-info {
+  margin-top: 10px;
+  text-align: center;
+}
+.candle-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #3a3552;
+  margin-bottom: 4px;
+}
+.candle-desc {
+  font-size: 0.98rem;
+  color: #6d6a7c;
+  margin-bottom: 4px;
+}
+.candle-price {
+  font-size: 1.05rem;
+  color: #bbaeea;
+  font-weight: 600;
+}
+@media (max-width: 700px) {
+  .candle-card {
+    width: 100%;
+    margin-bottom: 12px;
   }
 }
 </style>
